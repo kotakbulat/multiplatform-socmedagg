@@ -1,5 +1,3 @@
-```markdown
-
 Cek Demo disini    :  https://www.kotakbulat.space/projects/socmed-agg-app
 Check Demo in here :  https://www.kotakbulat.space/projects/socmed-agg-app
 
@@ -52,20 +50,20 @@ Aplikasi ini **bukan** untuk tahap *production*. Aplikasi ini menggunakan data *
 
 1. **Clone atau Buat Project**
    Jika Anda belum membuat kerangka aplikasi menggunakan Vite, jalankan:
-   ``bash
+   ```bash
    npm create vite@latest omnifeed-poc -- --template react-ts
    cd omnifeed-poc
-   ``
+   ```
 
 2. **Install Dependencies**
-   ``bash
+   ```bash
    npm install
-   ``
+   ```
 
 3. **Jalankan Development Server**
-   ``bash
+   ```bash
    npm run dev
-   ``
+   ```
 
 4. **Lihat Aplikasi**
    Buka browser Anda dan arahkan ke `http://localhost:5173`
@@ -74,7 +72,7 @@ Aplikasi ini **bukan** untuk tahap *production*. Aplikasi ini menggunakan data *
 
 ##  Struktur Project
 
-``text
+```text
 src/
 ├── components/
 │   ├── Feed.tsx          # Menangani logika & state infinite scroll
@@ -89,7 +87,7 @@ src/
 ├── styles.css            # Styling kustom, animasi, dan variabel CSS
 ├── App.tsx               # Wrapper aplikasi utama dan Header
 └── main.tsx              # Entry point React DOM
-``
+```
 
 ---
 
@@ -126,4 +124,3 @@ Untuk membawa aplikasi ini ke tahap *production*, beberapa hal berikut perlu dia
 
 ---
 
-```
