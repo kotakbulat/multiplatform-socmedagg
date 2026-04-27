@@ -3,7 +3,7 @@
 Cek Demo disini    :  https://www.kotakbulat.space/projects/socmed-agg-app
 Check Demo in here :  https://www.kotakbulat.space/projects/socmed-agg-app
 
-# 📱 Feeds PoC: Contextual Commerce di dalam Feed Terpadu
+#  Feeds PoC: Contextual Commerce di dalam Feed Terpadu
 
 Feeds adalah Proof of Concept (PoC) sederhana berbasis React yang dibuat untuk menguji apakah konten bisa jadi alat marketing yang efektif, bukan sekadar hiburan; dirancang untuk memvalidasi dua hipotesis produk utama:
 
@@ -21,15 +21,15 @@ Aplikasi ini **bukan** untuk tahap *production*. Aplikasi ini menggunakan data *
 
 ---
 
-## ✨ Fitur Utama
+##  Fitur Utama
 
-- **🔄 Unified Infinite Scroll**: Menggabungkan komponen teks, gambar, dan video vertikal 9:16 dengan mulus ke dalam satu *feed* (beranda) menggunakan API bawaan `IntersectionObserver`.
-- **🎥 Simulasi Platform**: 
+- ** Unified Infinite Scroll**: Menggabungkan komponen teks, gambar, dan video vertikal 9:16 dengan mulus ke dalam satu *feed* (beranda) menggunakan API bawaan `IntersectionObserver`.
+- ** Simulasi Platform**: 
   - **YouTube**: Menampilkan *embed iframe* YouTube asli yang dipaksa ke rasio 9:16 bergaya Shorts/Reels.
   - **Twitter/X**: Menampilkan kartu teks yang bersih dan mudah dibaca.
   - **Instagram**: Menampilkan gambar dengan *caption* dari pembuat konten.
-- **✈️ Lapisan Niat Kontekstual (*Contextual Intent Layer*)**: Sebuah *overlay* CTA berdesain kaca buram (*frosted-glass*) yang elegan, otomatis muncul pada konten yang memiliki metadata *travel* (misal: Vlog Tokyo, foto liburan di Bali).
-- **🔗 Pembuatan Tautan Dinamis**: Mengklik tombol CTA akan memproses metadata dari postingan terkait dan menghasilkan tautan pencarian tiket pesawat secara aktual (melalui Airpaz).
+- ** Lapisan Niat Kontekstual (*Contextual Intent Layer*)**: Sebuah *overlay* CTA berdesain kaca buram (*frosted-glass*) yang elegan, otomatis muncul pada konten yang memiliki metadata *travel* (misal: Vlog Tokyo, foto liburan di Bali).
+- ** Pembuatan Tautan Dinamis**: Mengklik tombol CTA akan memproses metadata dari postingan terkait dan menghasilkan tautan pencarian tiket pesawat secara aktual (melalui Airpaz).
 
 ---
 
@@ -43,7 +43,7 @@ Aplikasi ini **bukan** untuk tahap *production*. Aplikasi ini menggunakan data *
 
 ---
 
-## 🚀 Cara Menjalankan Project
+##  Cara Menjalankan Project
 
 ### Prasyarat (Prerequisites)
 - [Node.js](https://nodejs.org/) (direkomendasikan v16+)
@@ -72,7 +72,7 @@ Aplikasi ini **bukan** untuk tahap *production*. Aplikasi ini menggunakan data *
 
 ---
 
-## 📁 Struktur Project
+##  Struktur Project
 
 ``text
 src/
@@ -93,7 +93,7 @@ src/
 
 ---
 
-## 🧠 Cara Kerjanya di Balik Layar
+## Cara Kerjanya di Balik Layar
 
 ### 1. Discriminated Unions (TypeScript)
 Aplikasi menggunakan struktur TypeScript yang kuat. Setiap *post* memiliki `type: 'video' | 'image' | 'text'`. Berdasarkan tipe ini, *compiler* TS menjamin bahwa `VideoCard` pasti menerima `videoId`, sedangkan `TextCard` pasti menerima `content`.
@@ -116,7 +116,7 @@ Untuk menyimulasikan *feed* tanpa batas (infinite) tanpa membutuhkan *database* 
 
 ---
 
-## ⚠️ Keterbatasan (Mengapa ini disebut PoC)
+##  Keterbatasan (Mengapa ini disebut PoC)
 
 Untuk membawa aplikasi ini ke tahap *production*, beberapa hal berikut perlu diatasi:
 - **TOS & Scraping:** Saat ini aplikasi menggunakan YouTube *embed*. Aplikasi nyata akan membutuhkan akses API resmi (OAuth) atau infrastruktur *scraping* yang kompleks untuk mengambil video dengan aman tanpa melanggar kebijakan platform (Terms of Service).
@@ -126,5 +126,4 @@ Untuk membawa aplikasi ini ke tahap *production*, beberapa hal berikut perlu dia
 
 ---
 
-**Dibuat untuk menguji ide, dengan cepat. 🚀**
 ```
